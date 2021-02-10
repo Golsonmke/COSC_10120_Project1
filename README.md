@@ -1,1 +1,1 @@
-# COSC_10120_Project1
+# COSC_1020_Project1
