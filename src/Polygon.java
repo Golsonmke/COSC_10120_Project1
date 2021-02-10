@@ -14,7 +14,7 @@ public class Polygon {
 		//Display title and function of program
 		System.out.println("Welcome to the Polygonal Property Calculator!");
 		
-		//Print space in out put widow
+		//Print space in output widow
 		System.out.println();
 		
 		//Instance of the scanner class to read user input
@@ -45,7 +45,7 @@ public class Polygon {
 		System.out.print("Enter fence cost per meter:\t\t$");
 		double fenceCostPerMeter = in.nextDouble();
 		
-		//Print space in out put widow
+		//Print space in output widow
 		System.out.println();
 		
 		//Convert degree to radians
@@ -71,24 +71,24 @@ public class Polygon {
 		
 		//Calculate the total cost of polygonial property 
 		double totalCost = landCost + fenceCost;
-		
-		System.out.println();
-		
-		//Display property info title and first initial and last name
+			
+		//Display property info title, first initial and last name
 		System.out.println("Property Information for " + firstName.charAt(0) + ". " + lastName); 
 		
-		//For loop to print line of 64 astrisks
+		//For loop to print line of 64 asterisks
 			for (int i=0; i<65; i++){
 			    System.out.print("*");
 			}
-		//Print space in out put widow
+			
+		//Print space in output widow
 			System.out.println();
+	
 		
 		//Display formatted results from calculations and user input.
-		System.out.printf("Total area:\t\t\t\t" + "%.3f\n",area);    
-		System.out.printf("Total perimeter:\t\t\t" + "%.3f\n", perimeter);
-		System.out.printf("Length of apothem:\t\t\t" + "%.3f\n",apothem);
-		System.out.printf("Interior angle:\t\t\t\t" + "%.3f\n",angle);
+		System.out.printf("Total area:\t\t\t\t" + "%.3f%s\n",area," square meters" );    
+		System.out.printf("Total perimeter:\t\t\t" + "%.3f%s\n", perimeter," meters");
+		System.out.printf("Length of apothem:\t\t\t" + "%.3f%s\n",apothem ," meters");
+		System.out.printf("Interior angle:\t\t\t\t" + "%.3f%s\n",angle," degrees");
 		System.out.printf("Cost of land:\t\t\t\t$" + "%.2f\n",landCost);
 		System.out.printf("Cost of fencing:\t\t\t$" + "%.2f\n",fenceCost);
 		System.out.printf("Total cost:\t\t\t\t$" + "%.2f\n",totalCost);
@@ -98,12 +98,13 @@ public class Polygon {
 		
 		//Display title for loan info section
 		System.out.println("Loan Information");
-		//For loop to print line of 64 astrisks
+		
+		//For loop to print line of 64 asterisks
 			for (int i=0; i<65; i++){
 			    System.out.print("*");
 			}
 		
-		//Print space in out put widow
+		//Print space in output widow
 			System.out.println();
 			
 		//Get annual interest rate from user
@@ -117,7 +118,7 @@ public class Polygon {
 		//Calculate total cost plus interest
 		double CostWithInterest = totalCost * Math.pow( 1 + annualInterestRate, loanYears);
 		
-		//Display the total coat with interest
+		//Display the total cost with interest
 		System.out.printf("Total cost with interest:\t\t$" + "%.2f\n",CostWithInterest);
 		
 		//Close scanner to prevent leaks
